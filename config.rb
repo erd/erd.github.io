@@ -12,6 +12,13 @@ activate :google_analytics do |analytics|
 end
 
 #
+# Deploy to GitHub pages
+#
+activate :deploy do |deploy|
+    deploy.method = :git
+end
+
+#
 # Enable blog
 #
 activate :blog do |blog|
