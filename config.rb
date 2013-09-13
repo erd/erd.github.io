@@ -5,6 +5,13 @@ set :css_dir,       'stylesheets'
 set :images_dir,    'images'
 
 #
+# Enable analytics
+#
+activate :google_analytics do |analytics|
+    analytics.tracking_id = 'UA-44035610-1'
+end
+
+#
 # Enable blog
 #
 activate :blog do |blog|
