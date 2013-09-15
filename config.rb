@@ -16,6 +16,8 @@ end
 #
 activate :deploy do |deploy|
     deploy.method = :git
+    deploy.remote = 'origin'
+    deploy.branch = 'master'
 end
 
 #
