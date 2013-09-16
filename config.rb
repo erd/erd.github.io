@@ -33,6 +33,8 @@ activate :blog do |blog|
     blog.summary_separator = /(READMORE)/
 end
 
+activate :directory_indexes
+
 #
 # Enable RSS feed
 #
