@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Erich Douglass</title>
+  <id>http://erd.github.io/</id>
+  <link href="http://erd.github.io/"/>
+  <link href="http://erd.github.io/feed.xml" rel="self"/>
+  <updated>2015-03-29T17:00:00-07:00</updated>
+  <author>
+    <name>Erich Douglass</name>
+  </author>
+  <entry>
+    <title>Robolectric 3.0 RC2 Released</title>
+    <link rel="alternate" href="/2015/03/30/robolectric-30-rc2.html"/>
+    <id>/2015/03/30/robolectric-30-rc2.html</id>
+    <published>2015-03-29T17:00:00-07:00</published>
+    <updated>2015-03-29T17:00:00-07:00</updated>
+    <author>
+      <name>Erich Douglass</name>
+    </author>
+    <content type="html">&lt;h1 id="robolectric-30-rc2-released"&gt;Robolectric 3.0 RC2 Released&lt;/h1&gt;
+
+&lt;p&gt;Ever since 2.4 was released back in November, we’ve been hard at work on
+Robolectric 3.0. We wanted to deliver on some big features that the community
+has been wanting for a long time. As of this morning, release candidate 2
+should be available on Maven Central with the coordinates
+“org.robolectric:robolectric:3.0-rc2″.&lt;/p&gt;
+
+&lt;h2 id="new-features"&gt;New Features&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Support for KitKat (API 19)&lt;/li&gt;
+  &lt;li&gt;Support for Lollipop (API 21)&lt;/li&gt;
+  &lt;li&gt;Out of the box support for Gradle / Android Studio&lt;/li&gt;
+  &lt;li&gt;Support for add-on shadow modules&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The work we did to support Lollipop was extensive and should put us in a
+better position to support newer versions of Android as they are released.&lt;/p&gt;
+
+&lt;h2 id="upgrading-from-24"&gt;Upgrading from 2.4&lt;/h2&gt;
+
+&lt;p&gt;Since there have been backwards incompatible changes from 2.4, we’ve created
+a wiki page detailing some of the major changes. Most of the changes involve
+methods moving to a different class or methods being renamed. Very few (if any)
+methods had their semantics changed.&lt;/p&gt;
+
+&lt;h2 id="reporting-bugs"&gt;Reporting Bugs&lt;/h2&gt;
+
+&lt;p&gt;If you come across a bugs or have any questions, feel free to ask on the
+mailing list robolectric@googlegroups.com or file an issue on the issue
+tracker. If you do open an issue, please include information about how you
+are running your tests (Gradle / Maven, etc).&lt;/p&gt;
+
+&lt;h2 id="acknowledgements"&gt;Acknowledgements&lt;/h2&gt;
+
+&lt;p&gt;I want to personally thank the contributors that helped do a lot of the heavy
+lifting in this release (in no particular order): Ryan Spore, Aaron VonderHarr,
+Jonathan Gerrish and Fr. Jeremy Kreig.&lt;/p&gt;
+</content>
+    <summary type="html">&lt;h1 id="robolectric-30-rc2-released"&gt;Robolectric 3.0 RC2 Released&lt;/h1&gt;
+
+&lt;p&gt;Ever since 2.4 was released back in November, we’ve been hard at work on
+Robolectric 3.0. We wanted to deliver on some big features that the community
+has been wanting for a long time. As of this morning, release candidate...&lt;/p&gt;</summary>
+  </entry>
+</feed>
