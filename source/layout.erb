@@ -14,32 +14,25 @@
     <div class="sidebar">
         <div class="container-fluid">
             <div class="avatar">
-                <%= image_tag 'avatar.png' %>
+                <%= image_tag 'avatar.jpg' %>
             </div>
             <h1 class="name">
-                Erich Douglass
+                <%= link_to 'Erich Douglass', '/' %>
             </h1>
-            <ul class="links">
-                <li><%= link_to 'Home', '/' %></li>
-                <li>*</li>
-                <li><%= link_to 'Archives', '/archives.html' %></li>
-                <li>*</li>
-                <li><%= link_to 'About', '/about.html' %></li>
-            </ul>
             <ul class="social">
                 <li>
                     <% link_to 'http://twitter.com/erichdouglass' do %>
-                        <i class="icon-twitter"></i>
+                        <i class="fa fa-twitter-square"></i>
                     <% end %>
                 </li>
                 <li>
-                    <% link_to 'http://plus.google.com/102670330414606263487' do %>
-                        <i class="icon-google-plus"></i>
+                    <% link_to 'http://github.com/erd' do %>
+                        <i class="fa fa-github-square"></i>
                     <% end %>
                 </li>
                 <li>
-                    <% link_to '/feed.xml' do %>
-                        <i class="icon-rss"></i>
+                    <% link_to 'http://plus.google.com/+ErichDouglass' do %>
+                        <i class="fa fa-google-plus-square"></i>
                     <% end %>
                 </li>
             </ul>

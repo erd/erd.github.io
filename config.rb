@@ -1,46 +1,32 @@
-Time.zone = 'America/Los_Angeles'
-
 set :js_dir,        'javascripts'
 set :css_dir,       'stylesheets'
 set :images_dir,    'images'
 
-#
-# Enable analytics
-#
-activate :google_analytics do |analytics|
-    analytics.tracking_id = 'UA-44035610-1'
-end
+page "feed.xml", layout: false
 
-#
-# Deploy to GitHub pages
-#
 activate :deploy do |deploy|
     deploy.method = :git
     deploy.remote = 'origin'
     deploy.branch = 'master'
 end
 
-#
-# Enable blog
-#
 activate :blog do |blog|
-    blog.per_page = 5
-    blog.paginate = true
+    blog.per_page  = 5
+    blog.paginate  = true
     blog.page_link = "page/:num"
     blog.default_extension = ".md"
 
-    blog.sources = "articles/:year-:month-:day-:title.html"
+    blog.sources   = "articles/:year-:month-:day-:title.html"
+    blog.permalink = "{year}/{month}/{day}/{title}.html"
     blog.summary_separator = /(READMORE)/
 end
 
-activate :directory_indexes
-
-#
-# Enable RSS feed
-#
-page "/feed.xml", :layout => false
+activate :google_analytics do |ga|
+    ga.tracking_id = 'UA-44035610-1'
+end
 
 configure :build do
+    activate :asset_hash
     activate :minify_css
     activate :minify_javascript
     activate :cache_buster

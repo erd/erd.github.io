@@ -6,7 +6,7 @@ per_page: 3
     <article>
         <time><%= article_date(article) %></time>
         <h2><%= link_to article.title, article %></h2>
-        <%= article.summary %>
+        <%= strip_summary(article.summary) %>
     </article>
 <% end %>
 

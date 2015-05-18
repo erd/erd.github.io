@@ -1,6 +1,6 @@
 @import "bootstrap";
 @import "font-awesome";
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 
 $gray1: #CCCCCC;
 $gray2: #F8F8F8;
@@ -9,7 +9,8 @@ $black: #333333;
 
 html, body {
     height: 100%;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
@@ -32,9 +33,16 @@ html, body {
     .name {
         color: $gray1;
         padding: 8px;
-        font-size: 28px;
+        font-size: 24px;
         font-weight: bold;
         text-align: center;
+
+        a {
+            color: $gray1;
+        }
+        a:hover {
+            text-decoration: none;
+        }
     }
 
     .avatar {
@@ -45,32 +53,10 @@ html, body {
         margin: 0 auto 0 auto;
     }
 
-    .links {
-        width: 100%;
-        margin: 0 auto 0 auto;
-        display: inline-block;
-        font-size: 1.2em;
-        text-align: center;
-
-        li {
-            color: $gray1;
-            margin: 0 4px;
-            display: inline;
-            text-align: center;
-            list-style-type: none;
-
-            a {
-                color: $gray1;
-            }
-            a:hover {
-                text-decoration: none;
-            }
-        }
-    }
-
     .social {
         width: 100%;
-        margin: 20px auto 0 auto;
+        margin: 0 auto 0 auto;
+        padding: 0;
         display: inline-block;
         font-size: 2em;
         text-align: center;
@@ -94,6 +80,7 @@ html, body {
 
 .mainbar {
     height: 100%;
+    line-height: 24px;
     margin-left: 280px;
 
     article {
